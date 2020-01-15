@@ -5,13 +5,14 @@
 }
 
 :root {
-  --cell-size: 100px;
+  --cell-size: 200px;
   /* cal for letter size of "x" and "o" should be smaller than the box size */
   --mark-size: calc(var(--cell-size) * 0.9);
 }
 
 body {
   margin: 0;
+  background-color: brown;
 }
 
 .board {
@@ -29,7 +30,7 @@ body {
 .cell {
   width: var(--cell-size);
   height: var(--cell-size);
-  background-color: brown;
+  /* background-color: brown; */
   border: 1px solid white;
   display: flex;
   justify-content: center;
@@ -67,6 +68,7 @@ body {
 .cell.x::before,
 .cell.x::after {
   content: "";
+  position: absolute;
   width: calc(var(--mark-size) * 0.15);
   height: var(--mark-size);
 }
@@ -75,6 +77,6 @@ body {
   transform: rotate(45deg);
 }
 
-.cell.x::before {
+.cell.x::after {
   transform: rotate(-45deg);
 }
