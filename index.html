@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- Creating a board to play tic tac toe -->
-    <div id="board" class="board">
+    <div id="displayBoard" class="board">
       <div class="cell" data-cell></div>
       <div class="cell" data-cell></div>
       <div class="cell" data-cell></div>
@@ -19,6 +19,11 @@
       <div class="cell" data-cell></div>
       <div class="cell" data-cell></div>
       <div class="cell" data-cell></div>
+    </div>
+    <!-- Display the winning message -->
+    <div class="winning-message" id="winningMessage">
+      <div data-winning-message-text></div>
+      <button id="restartButton">Restart</button>
     </div>
     <script src="./js/game.js"></script>
   </body>
