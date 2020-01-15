@@ -6,10 +6,16 @@ const board = document.getElementById("displayBoard");
 
 let circleTurn;
 
-//Condition added for each cell
-cellElements.forEach(cell => {
-  cell.addEventListener("click", handleClick, { once: true });
-});
+function startGame() {
+  circleTurn = false;
+  //Condition added for each cell
+  cellElements.forEach(cell => {
+    cell.addEventListener("click", handleClick, {
+      once: true
+    });
+  });
+  setBoardHoverClass();
+}
 
 function handleClick(e) {
   const cell = e.target;
@@ -36,3 +42,4 @@ function setBoardHoverClass() {
   }
   board.classList.add(X_CLASS);
 }
+startGame();
