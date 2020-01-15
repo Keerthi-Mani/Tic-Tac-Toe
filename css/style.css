@@ -14,4 +14,13 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
+  /* divide the board 3 * 3 */
+  grid-template-columns: repeat(3, auto);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border: 1px solid white;
 }
