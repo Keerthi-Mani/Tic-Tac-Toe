@@ -5,7 +5,7 @@
 }
 
 :root {
-  --cell-size: 100px;
+  --cell-size: 200px;
   /* cal for letter size of "x" and "o" should be smaller than the box size */
   --mark-size: cal(var(--cell-size) * 0.9);
 }
@@ -25,10 +25,11 @@ body {
   grid-template-columns: repeat(3, auto);
 }
 
+/* Borders removed  */
 .cell {
   width: var(--cell-size);
   height: var(--cell-size);
-  background-color: black;
+  background-color: brown;
   border: 1px solid white;
   color: white;
 }
