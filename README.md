@@ -26,6 +26,7 @@ If two human players have are playing, you just need to click in a position in t
 Once the game has a winner or there is a draw, you will see a dialog informing about the result. From here you can:
 
 - Start a new game.
+
   <img width="547" alt="Screen Shot 2020-01-15 at 7 17 02 PM" src="https://user-images.githubusercontent.com/52920074/72483030-a4260580-37cd-11ea-9c7a-6494c5df25d3.png">
 
 ## Feedback and issues:
